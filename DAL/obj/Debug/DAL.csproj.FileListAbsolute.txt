@@ -1,0 +1,9 @@
+E:\New folder (3)\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\New folder (3)\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\New folder (3)\DAL\bin\Debug\DAL.dll
+E:\New folder (3)\DAL\bin\Debug\DAL.pdb
+E:\New folder (3)\DAL\bin\Debug\theloai_dto.dll
+E:\New folder (3)\DAL\bin\Debug\theloai_dto.pdb
+E:\New folder (3)\DAL\obj\Debug\DAL.csproj.Up2Date
+E:\New folder (3)\DAL\obj\Debug\DAL.dll
+E:\New folder (3)\DAL\obj\Debug\DAL.pdb
