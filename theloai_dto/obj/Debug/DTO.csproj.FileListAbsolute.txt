@@ -1,0 +1,6 @@
+E:\New folder (3)\theloai_dto\bin\Debug\theloai_dto.dll
+E:\New folder (3)\theloai_dto\bin\Debug\theloai_dto.pdb
+E:\New folder (3)\theloai_dto\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\New folder (3)\theloai_dto\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\New folder (3)\theloai_dto\obj\Debug\theloai_dto.dll
+E:\New folder (3)\theloai_dto\obj\Debug\theloai_dto.pdb
