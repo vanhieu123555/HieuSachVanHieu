@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E8F4FA8-3EF5-4AAA-A42F-3C2DCE20CD86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyHieuSach</RootNamespace>
+    <AssemblyName>QuanLyHieuSach</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>book library.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOOKSTOREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet2.cs">
+      <DependentUpon>BOOKSTOREDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet4.cs">
+      <DependentUpon>BOOKSTOREDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet5.cs">
+      <DependentUpon>BOOKSTOREDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInHoaDon.Designer.cs">
+      <DependentUpon>frmInHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInPhieuNhap.Designer.cs">
+      <DependentUpon>frmInPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemKhachHang.Designer.cs">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNhaCC.Designer.cs">
+      <DependentUpon>frmThemNhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSach.Designer.cs">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_GUI.Designer.cs">
+      <DependentUpon>Login_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ucBanSach_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBanSach_GUI.Designer.cs">
+      <DependentUpon>ucBanSach_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNhapSach_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNhapSach_GUI.Designer.cs">
+      <DependentUpon>ucNhapSach_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLyHangTon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLyHangTon.Designer.cs">
+      <DependentUpon>ucQuanLyHangTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLyHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLyHoaDon.Designer.cs">
+      <DependentUpon>ucQuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLyKhachHang_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLyKhachHang_GUI.Designer.cs">
+      <DependentUpon>ucQuanLyKhachHang_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLyNhanVien_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLyNhanVien_GUI.Designer.cs">
+      <DependentUpon>ucQuanLyNhanVien_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLyPhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLyPhieuNhap.Designer.cs">
+      <DependentUpon>ucQuanLyPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucQuanLySach_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucQuanLySach_GUI.Designer.cs">
+      <DependentUpon>ucQuanLySach_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThongKeDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThongKeDoanhThu.Designer.cs">
+      <DependentUpon>ucThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInHoaDon.resx">
+      <DependentUpon>frmInHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInPhieuNhap.resx">
+      <DependentUpon>frmInPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemKhachHang.resx">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNhaCC.resx">
+      <DependentUpon>frmThemNhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSach.resx">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_GUI.en-US.resx">
+      <DependentUpon>Login_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_GUI.en.resx">
+      <DependentUpon>Login_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_GUI.resx">
+      <DependentUpon>Login_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportHoaDon.rdlc" />
+    <EmbeddedResource Include="Reportphieunhap.rdlc" />
+    <EmbeddedResource Include="ucBanSach_GUI.resx">
+      <DependentUpon>ucBanSach_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhapSach_GUI.resx">
+      <DependentUpon>ucNhapSach_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLyHangTon.resx">
+      <DependentUpon>ucQuanLyHangTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLyHoaDon.resx">
+      <DependentUpon>ucQuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLyKhachHang_GUI.resx">
+      <DependentUpon>ucQuanLyKhachHang_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLyNhanVien_GUI.resx">
+      <DependentUpon>ucQuanLyNhanVien_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLyPhieuNhap.resx">
+      <DependentUpon>ucQuanLyPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucQuanLySach_GUI.resx">
+      <DependentUpon>ucQuanLySach_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThongKeDoanhThu.resx">
+      <DependentUpon>ucThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BOOKSTOREDataSet.xsc">
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet.xss">
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet1.xsc">
+      <DependentUpon>BOOKSTOREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet1.xss">
+      <DependentUpon>BOOKSTOREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet2.xsc">
+      <DependentUpon>BOOKSTOREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet2.xss">
+      <DependentUpon>BOOKSTOREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet3.xsc">
+      <DependentUpon>BOOKSTOREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet3.xss">
+      <DependentUpon>BOOKSTOREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet4.xsc">
+      <DependentUpon>BOOKSTOREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet4.xss">
+      <DependentUpon>BOOKSTOREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet5.xsc">
+      <DependentUpon>BOOKSTOREDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet5.xss">
+      <DependentUpon>BOOKSTOREDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{402765c5-7fdf-422b-9af9-baaca43f7710}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{e35632f2-ffe5-4fcd-a5b5-8895248349ac}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\theloai_dto\DTO.csproj">
+      <Project>{b0206b50-4fc0-4494-9d1f-fc6947050df0}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="book library.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
